@@ -1,19 +1,39 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Forcast</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
+
 <body>
     <header>
-        <h1>Weather Dashboard</h1>
+        <h1 class="is-size-2 has-text-centered">Weather Dashboard</h1>
     </header>
-    <h1>Search City:</h1>
-    <Form>
-        <input type="text" name="" id="" placeholder="Search">
-        <button onclick="searchForCity()">Search</button>
-    </Form>
-    
+    <div class="tile is-ancestor">
+        <div class="tile is-parent is-4">
+            <article class="tile is-child box">
+                <h1>Search City:</h1>
+                <input class="input is-primary" type="search" id="search-bar" placeholder="Search">
+                <button>Search</button>
+            </article>
+        </div>
+        <div class="tile is-parent is-vertical" id="todays-forecast">
+            <article class="tile is-child box">
+                <h2 id="city-name" class="mt-1 has-text-weight-bold"></h2>
+                <img source="" alt="" id="todays-forecast-icon">
+                <p>Temp: <span id="todays-temp"></span><span>F</span></p>
+                <p>Wind: <span id="todays-wind"></span><span>MPH</span></p>
+                <p>Humidity: <span id="todays-humidity"></span><span>%</span></p>
+            </article>
+            <article class="tile is-child box">
+                <h3>5 Day Forcast:</h3>
+                <div id="five-day-forcast">
+                </div>
+        </div>
+        </section>
+
 </body>
+
 </html>
