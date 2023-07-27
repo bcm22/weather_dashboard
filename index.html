@@ -15,8 +15,9 @@
         <div class="tile is-parent is-4">
             <article class="tile is-child box">
                 <h1>Search City:</h1>
-                <input class="input is-primary" type="search" id="search-bar" placeholder="Search">
-                <button>Search</button>
+                <input class="input is-primary" type="search" name="city-search" id="search-bar" placeholder="Search">
+                <button id="search-button">Search</button>
+                <div id="city-history"></div>
             </article>
         </div>
         <div class="tile is-parent is-vertical" id="todays-forecast">
@@ -33,7 +34,10 @@
                 </div>
         </div>
         </section>
-
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+            integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+        <script src="./assets/script.js"></script>
 </body>
 
 </html>
